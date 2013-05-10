@@ -15,12 +15,16 @@
 		E102EF7A173D2D8000B79C0D /* NSString+MD5.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+MD5.m"; sourceTree = "<group>"; };
 		E102EF7B173D2D8000B79C0D /* NSNumber+Speed.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSNumber+Speed.h"; sourceTree = "<group>"; };
 		E102EF7C173D2D8000B79C0D /* NSNumber+Speed.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+Speed.m"; sourceTree = "<group>"; };
+		E102EF80173D31AD00B79C0D /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		E11E94EF173D98C900E96E25 /* NSNumber+DirectionString.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSNumber+DirectionString.h"; sourceTree = "<group>"; };
+		E11E94F0173D98C900E96E25 /* NSNumber+DirectionString.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+DirectionString.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
 		E102EF6E173D2C7800B79C0D = {
 			isa = PBXGroup;
 			children = (
+				E102EF80173D31AD00B79C0D /* Localizable.strings */,
 				E102EF76173D2D8000B79C0D /* NSData+Base64.h */,
 				E102EF75173D2D8000B79C0D /* NSData+Base64.m */,
 				E102EF77173D2D8000B79C0D /* NSDate+DateFormatter.h */,
@@ -29,6 +33,8 @@
 				E102EF7A173D2D8000B79C0D /* NSString+MD5.m */,
 				E102EF7B173D2D8000B79C0D /* NSNumber+Speed.h */,
 				E102EF7C173D2D8000B79C0D /* NSNumber+Speed.m */,
+				E11E94EF173D98C900E96E25 /* NSNumber+DirectionString.h */,
+				E11E94F0173D98C900E96E25 /* NSNumber+DirectionString.m */,
 			);
 			sourceTree = "<group>";
 		};
