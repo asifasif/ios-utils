@@ -1,0 +1,86 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXFileReference section */
+		E102EF75173D2D8000B79C0D /* NSData+Base64.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
+		E102EF76173D2D8000B79C0D /* NSData+Base64.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
+		E102EF77173D2D8000B79C0D /* NSDate+DateFormatter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDate+DateFormatter.h"; sourceTree = "<group>"; };
+		E102EF78173D2D8000B79C0D /* NSDate+DateFormatter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDate+DateFormatter.m"; sourceTree = "<group>"; };
+		E102EF79173D2D8000B79C0D /* NSString+MD5.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+MD5.h"; sourceTree = "<group>"; };
+		E102EF7A173D2D8000B79C0D /* NSString+MD5.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+MD5.m"; sourceTree = "<group>"; };
+		E102EF7B173D2D8000B79C0D /* NSNumber+Speed.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSNumber+Speed.h"; sourceTree = "<group>"; };
+		E102EF7C173D2D8000B79C0D /* NSNumber+Speed.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+Speed.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		E102EF6E173D2C7800B79C0D = {
+			isa = PBXGroup;
+			children = (
+				E102EF76173D2D8000B79C0D /* NSData+Base64.h */,
+				E102EF75173D2D8000B79C0D /* NSData+Base64.m */,
+				E102EF77173D2D8000B79C0D /* NSDate+DateFormatter.h */,
+				E102EF78173D2D8000B79C0D /* NSDate+DateFormatter.m */,
+				E102EF79173D2D8000B79C0D /* NSString+MD5.h */,
+				E102EF7A173D2D8000B79C0D /* NSString+MD5.m */,
+				E102EF7B173D2D8000B79C0D /* NSNumber+Speed.h */,
+				E102EF7C173D2D8000B79C0D /* NSNumber+Speed.m */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXProject section */
+		E102EF6F173D2C7800B79C0D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+			};
+			buildConfigurationList = E102EF72173D2C7800B79C0D /* Build configuration list for PBXProject "ios-utils" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E102EF6E173D2C7800B79C0D;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+			);
+		};
+/* End PBXProject section */
+
+/* Begin XCBuildConfiguration section */
+		E102EF73173D2C7800B79C0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		E102EF74173D2C7800B79C0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E102EF72173D2C7800B79C0D /* Build configuration list for PBXProject "ios-utils" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E102EF73173D2C7800B79C0D /* Debug */,
+				E102EF74173D2C7800B79C0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E102EF6F173D2C7800B79C0D /* Project object */;
+}
