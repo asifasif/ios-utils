@@ -21,27 +21,27 @@
  the **progressImageView** and called **percentView**; within its bounds, it is
  shown a textual indication of the amount of the task that has completed.
  The way this indication is displayed, is controlled by the **showPercent**
- property: by default its value is `YES` and the current **progress** is
+ property: by default its value is 'YES' and the current **progress** is
  formatted as a percent complete respect the range of values.
- The user can set to `NO` the **showPercent** property to display the integral
+ The user can set to 'NO' the **showPercent** property to display the integral
  amount of the task that has completed.
  Since the width of the **progressImageView** cursor is fixed to 3 textual
  characters wide, if **maxProgressValue** is greater than 999, then the current
  **progress** is formatted as a percent even if the **showPercent** property
- is set to `NO`.
+ is set to 'NO'.
  The **showPercent** property isn't taken in account also when the
  **maxProgressValue** is less or equal to 1.0: the current **progress** will be
  always formatted as a percent.
  This Custom UIView can be created and instantiated both in-code
  (programmatically) or via a nib (storyboard).
- For this reason, are supported both `initWithFrame:andProgressBarColor:` and
- `initWithCoder:` methods respectively.
+ For this reason, are supported both 'initWithFrame:andProgressBarColor:' and
+ 'initWithCoder:' methods respectively.
  */
 
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
 
-@interface DTAProgressBar : UIView
+@interface DTAProgressBar : UIControl
 
 // Types
 
@@ -51,7 +51,8 @@ typedef enum
     DTAProgressBarGreen,
     DTAProgressBarRed,
     DTAProgressBarBrown,
-    DTAProgressBarBlue
+    DTAProgressBarBlue,
+    DTAProgressBarCustom
 } DTAProgressBarColor;
 
 // Properties
@@ -70,14 +71,25 @@ typedef enum
 @property (nonatomic, readwrite, assign) CGFloat maxProgressValue;
 
 /// Toggle between percent or integral view of current **progress**
-/// (default `YES` = percent)
+/// (default 'YES' = percent)
 @property (nonatomic, readwrite, assign) BOOL showPercent;
+
+/// Toggle Progress Label
+/// (default 'YES' = show)
+@property (nonatomic, readwrite, assign) BOOL showProgressLabel;
+
+/// Custom Label Value
+/// default '' = empty string
+@property (nonatomic, readwrite, assign) NSString *customLabelValue;
+@property (nonatomic, readwrite, assign) UIFont *customLabelFont;
+@property (nonatomic, readwrite, assign) UIColor *customLabelTextColor;
+
 
 // Methods
 
 /*!
- Override `initWithFrame` if the view is added programmatically.
- Initializes and returns a newly allocated `ADVPercentProgressBar` view object.
+ Override 'initWithFrame' if the view is added programmatically.
+ Initializes and returns a newly allocated 'DTAProgressBar' view object.
  The view is allocated with the specified frame rectangle and
  the **progressImageView** horizontal bar color.
  @param frame
@@ -86,7 +98,7 @@ typedef enum
  @param barColor
  The **progressImageView** horizontal bar color in the **DTAProgressBarColor** set.
  @return
- An initialized `ADVPercentProgressBar` view object
+ An initialized 'DTAProgressBar' view object
  or nil if the object couldn't be created.
  */
 - (id)initWithFrame:(CGRect)frame
@@ -94,11 +106,11 @@ andProgressBarColor:(DTAProgressBarColor)barColor;
 
 
 /*!
- Override `initWithCoder` if the view is loaded from a nib or storyboard.
+ Override 'initWithCoder' if the view is loaded from a nib or storyboard.
  @param coder
  A nib or storyboard object.
  @return
- An `ADVPercentProgressBar` initialized from a nib or storyboard.
+ An 'DTAProgressBar' initialized from a nib or storyboard.
  */
 - (id)initWithCoder:(NSCoder *)coder;
 

@@ -16,13 +16,25 @@
 		E1EE837B1743DDA400ED6421 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = E1EE837A1743DDA400ED6421 /* Default.png */; };
 		E1EE837D1743DDA400ED6421 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E1EE837C1743DDA400ED6421 /* Default@2x.png */; };
 		E1EE837F1743DDA400ED6421 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E1EE837E1743DDA400ED6421 /* Default-568h@2x.png */; };
-		E1EE83921743DE8A00ED6421 /* DTAProgressBar.m in Sources */ = {isa = PBXBuildFile; fileRef = E1EE83861743DE8A00ED6421 /* DTAProgressBar.m */; };
 		E1EE83931743DE8A00ED6421 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E1EE83871743DE8A00ED6421 /* Localizable.strings */; };
 		E1EE83941743DE8A00ED6421 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = E1EE83891743DE8A00ED6421 /* NSData+Base64.m */; };
 		E1EE83951743DE8A00ED6421 /* NSDate+DateFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = E1EE838B1743DE8A00ED6421 /* NSDate+DateFormatter.m */; };
 		E1EE83961743DE8A00ED6421 /* NSNumber+DirectionString.m in Sources */ = {isa = PBXBuildFile; fileRef = E1EE838D1743DE8A00ED6421 /* NSNumber+DirectionString.m */; };
 		E1EE83971743DE8A00ED6421 /* NSNumber+Speed.m in Sources */ = {isa = PBXBuildFile; fileRef = E1EE838F1743DE8A00ED6421 /* NSNumber+Speed.m */; };
 		E1EE83981743DE8A00ED6421 /* NSString+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = E1EE83911743DE8A00ED6421 /* NSString+MD5.m */; };
+		E1EE83C31743F48E00ED6421 /* progress-count.png in Resources */ = {isa = PBXBuildFile; fileRef = E1EE83B71743F48E00ED6421 /* progress-count.png */; };
+		E1EE83C41743F48E00ED6421 /* progress-count@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E1EE83B81743F48E00ED6421 /* progress-count@2x.png */; };
+		E1EE83C51743F48E00ED6421 /* progress-fill-blue.png in Resources */ = {isa = PBXBuildFile; fileRef = E1EE83B91743F48E00ED6421 /* progress-fill-blue.png */; };
+		E1EE83C61743F48E00ED6421 /* progress-fill-blue@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E1EE83BA1743F48E00ED6421 /* progress-fill-blue@2x.png */; };
+		E1EE83C71743F48E00ED6421 /* progress-fill-brown.png in Resources */ = {isa = PBXBuildFile; fileRef = E1EE83BB1743F48E00ED6421 /* progress-fill-brown.png */; };
+		E1EE83C81743F48E00ED6421 /* progress-fill-brown@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E1EE83BC1743F48E00ED6421 /* progress-fill-brown@2x.png */; };
+		E1EE83C91743F48E00ED6421 /* progress-fill-green.png in Resources */ = {isa = PBXBuildFile; fileRef = E1EE83BD1743F48E00ED6421 /* progress-fill-green.png */; };
+		E1EE83CA1743F48E00ED6421 /* progress-fill-green@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E1EE83BE1743F48E00ED6421 /* progress-fill-green@2x.png */; };
+		E1EE83CB1743F48E00ED6421 /* progress-fill-red.png in Resources */ = {isa = PBXBuildFile; fileRef = E1EE83BF1743F48E00ED6421 /* progress-fill-red.png */; };
+		E1EE83CC1743F48E00ED6421 /* progress-fill-red@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E1EE83C01743F48E00ED6421 /* progress-fill-red@2x.png */; };
+		E1EE83CD1743F48E00ED6421 /* progress-track.png in Resources */ = {isa = PBXBuildFile; fileRef = E1EE83C11743F48E00ED6421 /* progress-track.png */; };
+		E1EE83CE1743F48E00ED6421 /* progress-track@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E1EE83C21743F48E00ED6421 /* progress-track@2x.png */; };
+		E1EE83D51744265B00ED6421 /* DTAProgressBar.m in Sources */ = {isa = PBXBuildFile; fileRef = E1EE83D41744265B00ED6421 /* DTAProgressBar.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,8 +51,6 @@
 		E1EE837A1743DDA400ED6421 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		E1EE837C1743DDA400ED6421 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		E1EE837E1743DDA400ED6421 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		E1EE83851743DE8A00ED6421 /* DTAProgressBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTAProgressBar.h; sourceTree = "<group>"; };
-		E1EE83861743DE8A00ED6421 /* DTAProgressBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTAProgressBar.m; sourceTree = "<group>"; };
 		E1EE83871743DE8A00ED6421 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		E1EE83881743DE8A00ED6421 /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
 		E1EE83891743DE8A00ED6421 /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
@@ -52,6 +62,20 @@
 		E1EE838F1743DE8A00ED6421 /* NSNumber+Speed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+Speed.m"; sourceTree = "<group>"; };
 		E1EE83901743DE8A00ED6421 /* NSString+MD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MD5.h"; sourceTree = "<group>"; };
 		E1EE83911743DE8A00ED6421 /* NSString+MD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MD5.m"; sourceTree = "<group>"; };
+		E1EE83B71743F48E00ED6421 /* progress-count.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "progress-count.png"; sourceTree = "<group>"; };
+		E1EE83B81743F48E00ED6421 /* progress-count@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "progress-count@2x.png"; sourceTree = "<group>"; };
+		E1EE83B91743F48E00ED6421 /* progress-fill-blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "progress-fill-blue.png"; sourceTree = "<group>"; };
+		E1EE83BA1743F48E00ED6421 /* progress-fill-blue@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "progress-fill-blue@2x.png"; sourceTree = "<group>"; };
+		E1EE83BB1743F48E00ED6421 /* progress-fill-brown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "progress-fill-brown.png"; sourceTree = "<group>"; };
+		E1EE83BC1743F48E00ED6421 /* progress-fill-brown@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "progress-fill-brown@2x.png"; sourceTree = "<group>"; };
+		E1EE83BD1743F48E00ED6421 /* progress-fill-green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "progress-fill-green.png"; sourceTree = "<group>"; };
+		E1EE83BE1743F48E00ED6421 /* progress-fill-green@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "progress-fill-green@2x.png"; sourceTree = "<group>"; };
+		E1EE83BF1743F48E00ED6421 /* progress-fill-red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "progress-fill-red.png"; sourceTree = "<group>"; };
+		E1EE83C01743F48E00ED6421 /* progress-fill-red@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "progress-fill-red@2x.png"; sourceTree = "<group>"; };
+		E1EE83C11743F48E00ED6421 /* progress-track.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "progress-track.png"; sourceTree = "<group>"; };
+		E1EE83C21743F48E00ED6421 /* progress-track@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "progress-track@2x.png"; sourceTree = "<group>"; };
+		E1EE83D31744265B00ED6421 /* DTAProgressBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTAProgressBar.h; sourceTree = "<group>"; };
+		E1EE83D41744265B00ED6421 /* DTAProgressBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTAProgressBar.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,18 +122,8 @@
 		E1EE836E1743DDA400ED6421 /* ios-utils */ = {
 			isa = PBXGroup;
 			children = (
-				E1EE83851743DE8A00ED6421 /* DTAProgressBar.h */,
-				E1EE83861743DE8A00ED6421 /* DTAProgressBar.m */,
-				E1EE83881743DE8A00ED6421 /* NSData+Base64.h */,
-				E1EE83891743DE8A00ED6421 /* NSData+Base64.m */,
-				E1EE838A1743DE8A00ED6421 /* NSDate+DateFormatter.h */,
-				E1EE838B1743DE8A00ED6421 /* NSDate+DateFormatter.m */,
-				E1EE838C1743DE8A00ED6421 /* NSNumber+DirectionString.h */,
-				E1EE838D1743DE8A00ED6421 /* NSNumber+DirectionString.m */,
-				E1EE838E1743DE8A00ED6421 /* NSNumber+Speed.h */,
-				E1EE838F1743DE8A00ED6421 /* NSNumber+Speed.m */,
-				E1EE83901743DE8A00ED6421 /* NSString+MD5.h */,
-				E1EE83911743DE8A00ED6421 /* NSString+MD5.m */,
+				E1EE83D01743F4B900ED6421 /* Categories */,
+				E1EE83CF1743F4A600ED6421 /* DTAProgressBar */,
 				E1EE83771743DDA400ED6421 /* AppDelegate.h */,
 				E1EE83781743DDA400ED6421 /* AppDelegate.m */,
 				E1EE836F1743DDA400ED6421 /* Supporting Files */,
@@ -120,6 +134,7 @@
 		E1EE836F1743DDA400ED6421 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				E1EE83B61743F47C00ED6421 /* images */,
 				E1EE83871743DE8A00ED6421 /* Localizable.strings */,
 				E1EE83701743DDA400ED6421 /* ios-utils-Info.plist */,
 				E1EE83711743DDA400ED6421 /* InfoPlist.strings */,
@@ -130,6 +145,51 @@
 				E1EE837E1743DDA400ED6421 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E1EE83B61743F47C00ED6421 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				E1EE83B71743F48E00ED6421 /* progress-count.png */,
+				E1EE83B81743F48E00ED6421 /* progress-count@2x.png */,
+				E1EE83B91743F48E00ED6421 /* progress-fill-blue.png */,
+				E1EE83BA1743F48E00ED6421 /* progress-fill-blue@2x.png */,
+				E1EE83BB1743F48E00ED6421 /* progress-fill-brown.png */,
+				E1EE83BC1743F48E00ED6421 /* progress-fill-brown@2x.png */,
+				E1EE83BD1743F48E00ED6421 /* progress-fill-green.png */,
+				E1EE83BE1743F48E00ED6421 /* progress-fill-green@2x.png */,
+				E1EE83BF1743F48E00ED6421 /* progress-fill-red.png */,
+				E1EE83C01743F48E00ED6421 /* progress-fill-red@2x.png */,
+				E1EE83C11743F48E00ED6421 /* progress-track.png */,
+				E1EE83C21743F48E00ED6421 /* progress-track@2x.png */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
+		E1EE83CF1743F4A600ED6421 /* DTAProgressBar */ = {
+			isa = PBXGroup;
+			children = (
+				E1EE83D31744265B00ED6421 /* DTAProgressBar.h */,
+				E1EE83D41744265B00ED6421 /* DTAProgressBar.m */,
+			);
+			name = DTAProgressBar;
+			sourceTree = "<group>";
+		};
+		E1EE83D01743F4B900ED6421 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				E1EE83881743DE8A00ED6421 /* NSData+Base64.h */,
+				E1EE83891743DE8A00ED6421 /* NSData+Base64.m */,
+				E1EE838A1743DE8A00ED6421 /* NSDate+DateFormatter.h */,
+				E1EE838B1743DE8A00ED6421 /* NSDate+DateFormatter.m */,
+				E1EE838C1743DE8A00ED6421 /* NSNumber+DirectionString.h */,
+				E1EE838D1743DE8A00ED6421 /* NSNumber+DirectionString.m */,
+				E1EE838E1743DE8A00ED6421 /* NSNumber+Speed.h */,
+				E1EE838F1743DE8A00ED6421 /* NSNumber+Speed.m */,
+				E1EE83901743DE8A00ED6421 /* NSString+MD5.h */,
+				E1EE83911743DE8A00ED6421 /* NSString+MD5.m */,
+			);
+			name = Categories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -188,6 +248,18 @@
 				E1EE837D1743DDA400ED6421 /* Default@2x.png in Resources */,
 				E1EE837F1743DDA400ED6421 /* Default-568h@2x.png in Resources */,
 				E1EE83931743DE8A00ED6421 /* Localizable.strings in Resources */,
+				E1EE83C31743F48E00ED6421 /* progress-count.png in Resources */,
+				E1EE83C41743F48E00ED6421 /* progress-count@2x.png in Resources */,
+				E1EE83C51743F48E00ED6421 /* progress-fill-blue.png in Resources */,
+				E1EE83C61743F48E00ED6421 /* progress-fill-blue@2x.png in Resources */,
+				E1EE83C71743F48E00ED6421 /* progress-fill-brown.png in Resources */,
+				E1EE83C81743F48E00ED6421 /* progress-fill-brown@2x.png in Resources */,
+				E1EE83C91743F48E00ED6421 /* progress-fill-green.png in Resources */,
+				E1EE83CA1743F48E00ED6421 /* progress-fill-green@2x.png in Resources */,
+				E1EE83CB1743F48E00ED6421 /* progress-fill-red.png in Resources */,
+				E1EE83CC1743F48E00ED6421 /* progress-fill-red@2x.png in Resources */,
+				E1EE83CD1743F48E00ED6421 /* progress-track.png in Resources */,
+				E1EE83CE1743F48E00ED6421 /* progress-track@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,12 +272,12 @@
 			files = (
 				E1EE83751743DDA400ED6421 /* main.m in Sources */,
 				E1EE83791743DDA400ED6421 /* AppDelegate.m in Sources */,
-				E1EE83921743DE8A00ED6421 /* DTAProgressBar.m in Sources */,
 				E1EE83941743DE8A00ED6421 /* NSData+Base64.m in Sources */,
 				E1EE83951743DE8A00ED6421 /* NSDate+DateFormatter.m in Sources */,
 				E1EE83961743DE8A00ED6421 /* NSNumber+DirectionString.m in Sources */,
 				E1EE83971743DE8A00ED6421 /* NSNumber+Speed.m in Sources */,
 				E1EE83981743DE8A00ED6421 /* NSString+MD5.m in Sources */,
+				E1EE83D51744265B00ED6421 /* DTAProgressBar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,6 +392,7 @@
 				E1EE83841743DDA400ED6421 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

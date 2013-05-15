@@ -7,20 +7,21 @@
 //
 
 #import "DTAProgressBar.h"
+#import <QuartzCore/QuartzCore.h>
 
 #define PERCENT_VIEW_WIDTH 32.0f
 #define PERCENT_VIEW_MIN_HEIGHT 14.0f
-#define TOP_PADDING 7.0f
+#define TOP_PADDING 0.0f
 #define LEFT_PADDING 5.0f
 #define RIGHT_PADDING 3.0f
 
 @implementation DTAProgressBar
 {
-    UIView* percentView;
+    UIView *percentView;
     UIImageView *bgImageView;
     UIImageView *progressImageView;
     UIImage *progressFillImage;
-    
+    UILabel *customLabel;
     BOOL customViewFromNIB;
     
 }
@@ -67,6 +68,12 @@
     [self progressImageDraw];
 }
 
+- (void)setCustomLabelValue:(NSString *)customLabelValue
+{
+    customLabel.text = customLabelValue;
+}
+
+
 - (void)setProgress:(CGFloat)theProgress
 {
     if (self.progress == theProgress) {
@@ -86,10 +93,37 @@
     [self progressImageDraw];
 }
 
+- (UIImage *)imageWithColor:(UIColor *)color {
+    CGRect rect = CGRectMake(0.0f, 0.0f, 293.0f, 28.0f);
+    UIGraphicsBeginImageContext(rect.size);
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    
+    CGContextSetFillColorWithColor(context, [color CGColor]);
+    CGContextFillRect(context, rect);
+    
+    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    
+    return image;
+}
+
 - (void)setProgressBarColor:(DTAProgressBarColor)theColor
 {
     NSString* progressFillStr = [self getImageNameFromBarDefinition:theColor];
-    progressFillImage = [UIImage imageNamed:progressFillStr];
+    
+    if ([progressFillStr isEqualToString:@""]) {
+        progressFillImage = [self imageWithColor:[UIColor colorWithRed:166.0/255.0 green:218.0/255.0 blue:96.0/255.0 alpha:1.0]];
+    } else {
+        progressFillImage = [UIImage imageNamed:progressFillStr];
+    }
+}
+
+- (void) setCustomLabelTextColor:(UIColor *)customLabelTextColor {
+    customLabel.textColor = customLabelTextColor;
+}
+
+- (void) setCustomLabelFont:(UIFont *)customLabelFont {
+    customLabel.font = customLabelFont;
 }
 
 - (void)DTAProgressBarDraw:(CGRect)frame withProgressBarColor:(DTAProgressBarColor)barColor
@@ -109,17 +143,47 @@
                               frame.size.height )
                    ];
     
-    [bgImageView setImage:[UIImage imageNamed:@"progress-track.png"]];
+    switch (barColor) {
+        case DTAProgressBarCustom:
+            [bgImageView setImage:[self imageWithColor:[UIColor colorWithRed:43.0/255.0 green:43.0/255.0 blue:43.0/255.0 alpha:1.0]]];
+            [bgImageView.layer setCornerRadius:10.0f];
+            [bgImageView.layer setBorderColor:[UIColor clearColor].CGColor];
+            [bgImageView.layer setBorderWidth:1.5f];
+            [bgImageView.layer setShadowColor:[UIColor clearColor].CGColor];
+            [bgImageView.layer setShadowOpacity:0.8];
+            [bgImageView.layer setShadowRadius:3.0];
+            [bgImageView.layer setShadowOffset:CGSizeMake(2.0, 2.0)];
+            bgImageView.layer.masksToBounds = YES;
+            break;
+        default:
+            [bgImageView setImage:[UIImage imageNamed:@"progress-track.png"]];
+            break;
+    }
     
     [self addSubview:bgImageView];
     
     progressImageView = [[UIImageView alloc] initWithFrame:
                          CGRectMake(
-                                    1,
+                                    0,
                                     0,
                                     0,
                                     frame.size.height )
                          ];
+    
+    switch (barColor) {
+        case DTAProgressBarCustom:
+            [progressImageView.layer setCornerRadius:10.0f];
+            [progressImageView.layer setBorderColor:[UIColor clearColor].CGColor];
+            [progressImageView.layer setBorderWidth:1.5f];
+            [progressImageView.layer setShadowColor:[UIColor clearColor].CGColor];
+            [progressImageView.layer setShadowOpacity:0.8];
+            [progressImageView.layer setShadowRadius:3.0];
+            [progressImageView.layer setShadowOffset:CGSizeMake(2.0, 2.0)];
+            progressImageView.layer.masksToBounds = YES;
+            break;
+        default:
+            break;
+    }
     
     [self addSubview:progressImageView];
     
@@ -155,6 +219,11 @@
         NSLog(@"DTAProgressBarDraw: Frame heigh is too small to draw PercentView");
         return;
     }
+    
+    customLabel = [[UILabel alloc] initWithFrame:CGRectMake(0.0, 0.0, self.frame.size.width, self.frame.size.height)];
+    customLabel.backgroundColor = [UIColor clearColor];
+    customLabel.textAlignment = NSTextAlignmentCenter;
+    [self addSubview:customLabel];
     
     percentView = [[UIView alloc] initWithFrame:
                    CGRectMake(
@@ -195,9 +264,11 @@
     [self addSubview:percentView];
     
     self.showPercent = YES;
+    self.showProgressLabel = YES;
     self.minProgressValue = 0.0f;
     self.maxProgressValue = 1.0f;
     self.progress = 0.0f;
+    
 }
 
 - (void)progressImageDraw
@@ -217,11 +288,11 @@
     
     CGRect frame = progressImageView.frame;
     
-    frame.origin.x = 2;
-    frame.origin.y = 2;
-    frame.size.height = bgImageView.frame.size.height - 4;
+    frame.origin.x = 0;
+    frame.origin.y = 0;
+    frame.size.height = bgImageView.frame.size.height;
     
-    frame.size.width = (bgImageView.frame.size.width - 4) * percentProgress;
+    frame.size.width = bgImageView.frame.size.width * percentProgress;
     
     progressImageView.frame = frame;
     
@@ -248,6 +319,14 @@
         // show integral
         [percentLabel setText:[NSString stringWithFormat:@"%d", (int)progress]];
     }
+    
+    if (self.showProgressLabel) {
+        percentView.hidden = NO;
+        percentLabel.hidden = NO;
+    } else {
+        percentLabel.hidden = YES;
+        percentView.hidden = YES;
+    }
 }
 
 -(NSString*)getImageNameFromBarDefinition:(DTAProgressBarColor)barDef
@@ -266,6 +345,9 @@
             break;
         case DTAProgressBarGreen:
             imageName = @"progress-fill-green.png";
+            break;
+        case DTAProgressBarCustom:
+            imageName = @"";
             break;
         default:
             imageName = @"progress-fill-green.png";
