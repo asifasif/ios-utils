@@ -34,7 +34,8 @@
 		E1EE83CC1743F48E00ED6421 /* progress-fill-red@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E1EE83C01743F48E00ED6421 /* progress-fill-red@2x.png */; };
 		E1EE83CD1743F48E00ED6421 /* progress-track.png in Resources */ = {isa = PBXBuildFile; fileRef = E1EE83C11743F48E00ED6421 /* progress-track.png */; };
 		E1EE83CE1743F48E00ED6421 /* progress-track@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E1EE83C21743F48E00ED6421 /* progress-track@2x.png */; };
-		E1EE83D51744265B00ED6421 /* DTAProgressBar.m in Sources */ = {isa = PBXBuildFile; fileRef = E1EE83D41744265B00ED6421 /* DTAProgressBar.m */; };
+		E1EE83D9174437D800ED6421 /* DTAProgressBar.m in Sources */ = {isa = PBXBuildFile; fileRef = E1EE83D7174437D800ED6421 /* DTAProgressBar.m */; };
+		E1EE83DA174437D800ED6421 /* WindMeterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1EE83D8174437D800ED6421 /* WindMeterViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,8 +75,9 @@
 		E1EE83C01743F48E00ED6421 /* progress-fill-red@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "progress-fill-red@2x.png"; sourceTree = "<group>"; };
 		E1EE83C11743F48E00ED6421 /* progress-track.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "progress-track.png"; sourceTree = "<group>"; };
 		E1EE83C21743F48E00ED6421 /* progress-track@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "progress-track@2x.png"; sourceTree = "<group>"; };
-		E1EE83D31744265B00ED6421 /* DTAProgressBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTAProgressBar.h; sourceTree = "<group>"; };
-		E1EE83D41744265B00ED6421 /* DTAProgressBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTAProgressBar.m; sourceTree = "<group>"; };
+		E1EE83D6174437D800ED6421 /* DTAProgressBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTAProgressBar.h; sourceTree = "<group>"; };
+		E1EE83D7174437D800ED6421 /* DTAProgressBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTAProgressBar.m; sourceTree = "<group>"; };
+		E1EE83D8174437D800ED6421 /* WindMeterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WindMeterViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,8 +171,9 @@
 		E1EE83CF1743F4A600ED6421 /* DTAProgressBar */ = {
 			isa = PBXGroup;
 			children = (
-				E1EE83D31744265B00ED6421 /* DTAProgressBar.h */,
-				E1EE83D41744265B00ED6421 /* DTAProgressBar.m */,
+				E1EE83D6174437D800ED6421 /* DTAProgressBar.h */,
+				E1EE83D7174437D800ED6421 /* DTAProgressBar.m */,
+				E1EE83D8174437D800ED6421 /* WindMeterViewController.m */,
 			);
 			name = DTAProgressBar;
 			sourceTree = "<group>";
@@ -277,7 +280,8 @@
 				E1EE83961743DE8A00ED6421 /* NSNumber+DirectionString.m in Sources */,
 				E1EE83971743DE8A00ED6421 /* NSNumber+Speed.m in Sources */,
 				E1EE83981743DE8A00ED6421 /* NSString+MD5.m in Sources */,
-				E1EE83D51744265B00ED6421 /* DTAProgressBar.m in Sources */,
+				E1EE83D9174437D800ED6421 /* DTAProgressBar.m in Sources */,
+				E1EE83DA174437D800ED6421 /* WindMeterViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
